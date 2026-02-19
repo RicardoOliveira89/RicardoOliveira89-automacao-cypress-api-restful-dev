@@ -21,7 +21,7 @@ describe('Buscar objetos', () => {
         const ID_OBJETO = '111111111'
         cy.buscarObjetoEspecifico(ID_OBJETO).then((response) => {
             expect(response.status).equal(404)
-            expect(response.body.error).equal(`Oject with id=${ID_OBJETO} was not found.`)
+            expect(response.body.error).equal(`Object with id=${ID_OBJETO} was not found.`)
         })
     })
 
